@@ -1,7 +1,7 @@
 package com.rafael.securityjwt.dto;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
 
 /**
  * DTO para respuestas de autenticacion (login y registro).
@@ -14,7 +14,7 @@ import lombok.Data;
  *
  * @AllArgsConstructor: Lombok genera un constructor con todos los campos.
  */
-@Data
+@Getter
 @AllArgsConstructor
 public class AuthResponse {
     /** Token JWT que el cliente debe usar para autenticarse */

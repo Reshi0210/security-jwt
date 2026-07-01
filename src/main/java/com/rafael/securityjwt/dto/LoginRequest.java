@@ -1,6 +1,7 @@
 package com.rafael.securityjwt.dto;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 /**
  * DTO (Data Transfer Object) para peticiones de login.
@@ -8,10 +9,11 @@ import lombok.Data;
  * Representa el JSON que el cliente envia en el body:
  * { "username": "admin", "password": "admin123" }
  *
- * @Data de Lombok genera getters, setters y toString automaticamente.
+ * @Getter y @Setter: Lombok genera getters y setters.
  * Spring (Jackson) usa los setters para deserializar el JSON a este objeto.
  */
-@Data
+@Getter
+@Setter
 public class LoginRequest {
     private String username;
     private String password;

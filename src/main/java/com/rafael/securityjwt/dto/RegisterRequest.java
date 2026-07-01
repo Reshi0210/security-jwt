@@ -1,6 +1,7 @@
 package com.rafael.securityjwt.dto;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 /**
  * DTO para peticiones de registro de nuevos usuarios.
@@ -8,7 +9,8 @@ import lombok.Data;
  * Representa el JSON: { "username": "nuevoUsuario", "password": "miPassword" }
  * El rol no se envia porque siempre se asigna USER por defecto (por seguridad).
  */
-@Data
+@Getter
+@Setter
 public class RegisterRequest {
     private String username;
     private String password;
